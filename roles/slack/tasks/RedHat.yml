@@ -1,0 +1,5 @@
+
+- name: Install packages
+  yum:
+    name: "slack"
+    state: present

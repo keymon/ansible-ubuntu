@@ -1,0 +1,5 @@
+---
+# tasks file for slack
+- name: Include tasks suitable to our OS Family
+  include: "{{ ansible_os_family }}.yml"
+

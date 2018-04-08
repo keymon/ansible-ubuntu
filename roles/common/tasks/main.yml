@@ -64,6 +64,24 @@
     - wget
     - whois
     - zip
-
+    - vim-gtk
+    - git-hub
+    - bison
+    - pinentry-gtk2
+    - notify-osd
+    - virtualenvwrapper
+    - pass
+    - jq
+    - net-tools
+    - arandr
+    - libx11-dev
+    - libxrandr-dev
+    - libxinerama-dev
+    - docker.io
+    - geeqie
+    - postgresql-client-9.6
+    - shellcheck
+    - tmate
+    - gnome-appletsp
 - name: Upgrade installed packages
   apt: upgrade=yes

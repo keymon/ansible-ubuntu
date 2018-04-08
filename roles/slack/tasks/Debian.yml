@@ -1,0 +1,19 @@
+---
+- apt_key:
+    url: "{{ apt_slack_repo_key }}"
+    state: present
+
+- apt_repository: 
+    repo: "{{ apt_slack_repo }}"
+    mode: 0644
+    state: present
+
+- name: Update the apt cache
+  apt:
+    cache_valid_time: 3600
+    update_cache: yes
+
+- name: Slack Install packages
+  apt:
+    pkg: "slack-desktop"
+    state: present

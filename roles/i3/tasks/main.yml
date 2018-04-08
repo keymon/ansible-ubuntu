@@ -1,0 +1,11 @@
+---
+
+- name: Install i3 packages
+  apt: pkg={{ item }} state=latest update_cache=yes cache_valid_time={{ aptcachetime }}
+  with_items:
+  - i3-wm
+  - i3lock
+  - i3status
+  - xautolock
+  - gnome-do
+  - easystroke

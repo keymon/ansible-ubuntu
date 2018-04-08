@@ -4,10 +4,6 @@
   apt: pkg={{ item }} state=latest update_cache=yes cache_valid_time={{ aptcachetime }}
   with_items:
     - pwgen
-    - imagemagick
-    - libav-tools
-    - cowsay
-    - fortune
 
 - name: Install dotfiles dependencies with Python PIP
   pip: name={{ item }} state=latest
@@ -20,7 +16,7 @@
   register: public_dotfiles_create
 
 - name: Clone public dotfiles repository
-  git: repo=https://github.com/Benoth/dotfiles.git dest="{{ ansible_env.HOME }}/{{ dotfiles.path }}/public" update=yes accept_hostkey=yes
+  git: repo=https://github.com/keymon/dotfiles.git dest="{{ ansible_env.HOME }}/{{ dotfiles.path }}/public" update=yes accept_hostkey=yes
   # failed_when: false
 
 - name: Configure repository
