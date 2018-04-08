@@ -4,12 +4,13 @@
   hosts: localhost
   roles:
     # Common roles
-    # - { role: locales, become: true }
-    # - { role: common, become: true }
+     - { role: locales, become: true }
+     - { role: common, become: true }
     # - { role: zsh, become: true }
-    # - { role: dotfiles, become: true }
-    # - { role: java-openjdk, become: true }
-    # - { role: phantomjs, become: true }
+     - { role: dotfiles, become: true }
+     - { role: i3, become: true }
+     - { role: java-openjdk, become: true }
+     - { role: phantomjs, become: true }
     # - { role: projects-installer }
     # Server roles
     # - { role: apache2, become: true }
@@ -17,7 +18,7 @@
     # - { role: beanstalkd, become: true }
     # - { role: blackfire, become: true }
     # - { role: composer, become: true }
-    # - { role: docker, become: true }
+     - { role: docker, become: true }
     # - { role: elasticsearch, become: true }
     # - { role: exim, become: true }
     # - { role: fail2ban, become: true }
@@ -48,13 +49,13 @@
     # - { role: altyo, become: true }
     # - { role: arc-theme, become: true }
     # - { role: atom, become: true }
-    # - { role: chromium, become: true }
+     - { role: chromium, become: true }
     # - { role: claws-mail, become: true }
     # - { role: compton, become: true }
     # - { role: copyq, become: true }
     # - { role: dbeaver, become: true }
     # - { role: filezilla, become: true }
-    # - { role: firefox, become: true }
+     - { role: firefox, become: true }
     # - { role: flatabulous, become: true }
     # - { role: gdrive, become: true }
     # - { role: geary, become: true }
@@ -81,15 +82,15 @@
     # - { role: slop, become: true }
     # - { role: skype, become: true }
     # - { role: smartgit, become: true }
-    # - { role: spotify, become: true }
+     - { role: spotify, become: true }
     # - { role: sublime3, become: true }
     # - { role: sunflower, become: true }
     # - { role: teamviewer, become: true }
     # - { role: thunderbird, become: true }
     # - { role: ultra-flat-icons, become: true }
-    # - { role: urxvt-perls }
-    # - { role: vagrant, become: true }
-    # - { role: virtualbox, become: true }
+     - { role: urxvt-perls }
+     - { role: vagrant, become: true }
+     - { role: virtualbox, become: true }
     # - { role: vokoscreen, become: true }
     # - { role: wine, become: true }
     # - { role: workrave, become: true }
@@ -105,3 +106,4 @@
     # - { role: browsersync }
     # - { role: bower }
     # - { role: webpack }
+     - { role: slack }
